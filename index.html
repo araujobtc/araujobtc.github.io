@@ -6,15 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="assets/styles/main.css">
-    <link rel="stylesheet" href="assets/styles/header-footer.css">
     <link rel="stylesheet" href="assets/styles/introduction.css">
+    <link rel="stylesheet" href="assets/styles/about-me.css">
     <title>Araujobtc</title>
 </head>
-<body>
+<body onload="defaultSubject()">
     <header>
         <img src="assets/images/logo32x32.png" alt="logo" id="logo">
         <nav id="nav-bar">
-            <a href="#introduction" class="section-link">Início</a>
+            <a href="#top" class="section-link">Início</a>
             <a href="#about-me" class="section-link">Sobre mim</a>
             <a href="#my-projects" class="section-link">Projetos</a>
         </nav>
@@ -33,6 +33,101 @@
         <img src="assets/images/girl-on-computer.png" alt="Figura garota no computador" id="figure">
     </section>
 
+    <section id="about-me">
+        <div id="container">
+            <div id="subjects-contents">
+                <div class="about" id="me-content">
+                    <img class="picture" src="assets/images/my-picture.jpg" alt="Imagem de Isabelle Araujo">
+                    <div class="info-about">
+                        <address>Rio de Janeiro, RJ</address>
+                        <p>
+                            Olá! Meu nome é Isabelle Araujo e sou uma apaixonada por tecnologia.
+                            Meu primeiro contato com programação foi em 2018, assim que ingressei no
+                            CEFET/RJ para cursar o Ensino Médio Técnico. Lá obtive minha base em lógica
+                            de programação, algumas linguagens de programação e gestão de um projeto.
+                            <br><br>
+                            Hoje, dedico a maior parte do meu tempo para estudar e aprimorar os
+                            conhecimentos adquiridos, focando, principalmente, no front-end.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="about" id="skins-content">
+                    <img class="picture" src="assets/images/girl-computer.png" alt="Logo">
+                    <div class="info-about">
+                        <div class="skin">
+                            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg" alt="logo HTML5">
+                            <span>HTML5</span>
+                        </div>
+                        <div class="skin">
+                            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg" alt="logo JavaScript">
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="skin">
+                            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg" alt="logo CSS3">
+                            <span>CSS3</span>
+                        </div>
+                        <div class="skin">
+                            <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="logo Python">
+                            <span>Python</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about" id="education-content">
+                    <h1>Formação</h1>
+                    <div id="educ">
+                        <ul>
+                            <li><h2 class="local">CEFET/RJ - CENTRO FEDERAL DE EDUCAÇÃO TECNOLÓGICA CELSO SUCKOW DA FONSECA</h2>
+                                <h3 class="area-date">Ensino Médio Técnico em Informática | fev/2018 - dez/2021</h3>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="about" id="xp-content">
+                    <h1>Experiência</h1>
+                    <div id="experience">
+                        <ul>
+                            <li>
+                                <div>
+                                    <h2 class="local">CEFET/RJ - CENTRO FEDERAL DE EDUCAÇÃO TECNOLÓGICA CELSO SUCKOW DA FONSECA</h2>
+                                    <h3 class="area-date">Estágio Interno | dez/2021 - jun/2022</h3>
+                                    <p class="description">
+                                        A partir de informações online sobre produções bibliográficas,
+                                        é utilizado web scraping e análise sintática para gerar um
+                                        documento em excel para pontuar os produtores. (repositório)
+                                    </p>
+                                </div>
+                                <div id="xp-skin">
+                                    <img class="skin" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="logo Python">
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div id="subjects">
+                <div class="subj" id="me" onclick="subjectContent(this)">
+                    <img src="assets/icons/do-utilizador.svg" alt="icon">
+                    <span>Sobre mim</span>
+                </div>
+                <div class="subj" id="skins" onclick="subjectContent(this)">
+                    <img src="assets/icons/computador.svg" alt="icon">
+                    <span>Habilidades</span>
+                </div>
+                <div class="subj" id="education" onclick="subjectContent(this)">
+                    <img src="assets/icons/graduation-cap.svg" alt="icon">
+                    <span>Formação</span>
+                </div>
+                <div class="subj" id="xp" onclick="subjectContent(this)">
+                    <img src="assets/icons/briefcase.svg" alt="icon">
+                    <span>Experiência</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <script src="assets/scripts/typeEffect.js"></script>
+    <script src="assets/scripts/subjects.js"></script>
 </body>
 </html>

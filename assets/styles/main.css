@@ -3,6 +3,7 @@
     --light-blue: #d7dfe4;
     --light-pink: #e4989b;
     --soft-g-gray: #14241691;
+    --blue: #314852;
 }
 
 *{
@@ -23,7 +24,9 @@ header{
     align-items: center;
     padding: 15px;
     position: sticky;
-    background-color: var(--greenish-gray);
+    top: 0;
+    background-color: #00000075;
+    backdrop-filter: blur(20px);
 }
 
 #logo{
@@ -39,8 +42,7 @@ header{
 }
 
 .section-link:hover{
-    color: var(--light-pink);
-    font-weight: 500;
-    background-color: var(--soft-g-gray);
     border-radius: 10px;
+    background-color: var(--blue);
+    transition: 0.5s ease-in-out;
 }

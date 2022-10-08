@@ -1,0 +1,158 @@
+:root{
+    --pink: #d87b7e;
+    --soft-pink: #d87b7e60;
+    --light-blue: #d7dfe4;
+    --blue: #314852;
+    --light-soft-pink: #beb2b8;
+    --rborder: 10px;
+}
+
+/* about me */
+
+#about-me{
+    height: 100vh;
+    background-color: var(--blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#container{
+    width: 82%;
+    height: 60%;
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--light-blue);
+    box-shadow: 10px 10px 15px #00000070;
+    border-radius: var(--rborder);
+}
+
+/* subjects-contents */
+
+#subjects-contents{
+    padding: 20px;
+    width: 100%;
+}
+
+.about{
+    display: flex;
+    justify-content: space-between;
+}
+
+.picture{
+    width: 250px;
+    border-radius: 50%;
+}
+
+.info-about{
+    margin: 25px;
+    width: 100%;
+}
+/* me */
+address{
+    font-weight: 600;
+}
+
+.info-about p{
+    text-align: justify;
+    margin-top: 10px;
+}
+/* skins */
+#skins-content .info-about{
+    display: grid;
+    grid-template-columns: 3fr 3fr 3fr 3fr;
+}
+
+.skin{
+    width: 35px;
+    height: 35px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-self: center;
+    margin: 10px;
+}
+
+/* education */
+
+#education-content, #xp-content{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.local{
+    font-size: 13pt;
+    font-weight: 600;
+    width: 95%;
+}
+
+.area-date{
+    font-size: 12pt;
+    font-weight: 500;
+}
+
+#educ, #experience{
+    padding-left: 25px;
+}
+
+#educ ul li, #experience ul li{
+    margin-top: 20px;
+}
+
+#experience ul li{
+    display: inline-flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-right: 10px;
+}
+
+.description{
+    margin-bottom: 15px;
+    text-align: justify;
+    width: 90%;
+}
+
+#xp-skin{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: var(--light-soft-pink);
+    border-radius: var(--rborder);
+}
+
+/* subjects */
+
+#subjects{
+    height: 100%;
+}
+
+.subj{
+    width: 150px;
+    height: calc(100%/4);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.subj:nth-child(1){
+    border-top-right-radius: var(--rborder);
+}
+
+.subj:nth-last-child(1){
+    border-bottom-right-radius: var(--rborder);
+}
+
+.subj:hover{
+    background-color: var(--soft-pink);
+}
+
+.subj img{
+    width: 25px;
+    margin: 5px;
+}
+
+.subj span{
+    text-align: center;
+}
