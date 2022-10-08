@@ -17,9 +17,9 @@
     align-items: center;
 }
 
-#container{
+#container-about{
     width: 82%;
-    height: 60%;
+    height: 450px;
     display: inline-flex;
     justify-content: space-between;
     align-items: center;
