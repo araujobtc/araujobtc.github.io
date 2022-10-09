@@ -94,31 +94,17 @@ address{
 }
 
 #educ, #experience{
-    padding-left: 25px;
+    padding-left: 20px;
 }
 
 #educ ul li, #experience ul li{
     margin-top: 20px;
 }
 
-#experience ul li{
-    display: inline-flex;
-    justify-content: space-between;
-    width: 100%;
-    margin-right: 10px;
-}
-
 .description{
-    margin-bottom: 15px;
+    margin-top: 10px;
     text-align: justify;
     width: 90%;
-}
-
-#xp-skin{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    background-color: var(--light-soft-pink);
-    border-radius: var(--rborder);
 }
 
 /* subjects */
