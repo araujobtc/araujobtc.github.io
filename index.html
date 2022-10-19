@@ -8,9 +8,10 @@
     <link rel="stylesheet" href="assets/styles/main.css">
     <link rel="stylesheet" href="assets/styles/introduction.css">
     <link rel="stylesheet" href="assets/styles/about-me.css">
+    <link rel="stylesheet" href="assets/styles/projects.css">
     <title>Araujobtc</title>
 </head>
-<body onload="defaultSubject()">
+<body onload="defaultSubject(), projEmpty()">
     <header>
         <img src="assets/images/logo32x32.png" alt="logo" id="logo">
         <nav id="nav-bar">
@@ -124,7 +125,73 @@
         </div>
     </section>
 
+    <section id="projects">
+        <div id="container-proj">
+            <div class="proj">
+                <div class="banner">
+                    <h1 class="title-proj">PONDOC</h1>
+                    <img class="banner-img" src="assets/images/proj-pondoc.png" alt="">
+                </div>
+                <div class="info-proj">
+                    <p class="desc-proj">
+                        Software construido com <strong class="word-PY">Python</strong> que gera um relatório em Excel a partir de produções bibliográficas
+                        dos docentes do Programa de Pós-graduação em Ciência da Computação (PPCIC) do CEFET-RJ, no intuito de analisar e pontuar estes docentes,
+                        dando importância a avaliação Qualis das conferências e das revistas de publicação.
+                    </p>
+                    <div class="projlinks">
+                        <a title="repositório github" target="_blank" href="https://github.com/araujobtc/pondoc"><img class="icon-proj" src="assets/icons/github.svg" alt="logo github"></a>
+                        <a title="site demo" target="_blank" href=""><img class="icon-proj" src="assets/icons/globo.svg" alt="logo web"></a>
+                    </div> 
+                </div>           
+            </div>
+            <div class="proj">
+                <div class="banner">
+                    <h1 class="title-proj">Snake Game</h1>
+                    <img class="banner-img" src="assets/images/proj-snake-game.png" alt="">
+                </div>
+                <div class="info-proj">
+                    <p class="desc-proj">
+                        Mini game desenvolvido principalmente com <strong class="word-JS">JavaScript</strong>, além de <strong class="word-HTML">HTML5</strong> e <strong class="word-CSS">CSS3</strong>.
+                        É utilizado as setas do teclado para mover a cobrinha e levá-la até a maçã.
+                        O jogo registra a quantidade de maçãs comidas como pontuação e guarda o record do usuário temporáriamente
+                    </p>
+                    <div class="projlinks">
+                        <a title="repositório github" target="_blank" href="https://github.com/araujobtc/snake-game"><img class="icon-proj" src="assets/icons/github.svg" alt="logo github"></a>
+                        <a title="site demo" target="_blank" href=""><img class="icon-proj" src="assets/icons/globo.svg" alt="logo web"></a>
+                    </div> 
+                </div>           
+            </div>
+            <div class="proj">
+                <div class="banner">
+                    <h1 class="title-proj"></h1>
+                    <img class="banner-img" src="" alt="">
+                </div>
+                <div class="info-proj">
+                    <p class="desc-proj"></p>
+                    <div class="projlinks">
+                        <a title="repositório github" target="_blank" href=""><img class="icon-proj" src="assets/icons/github.svg" alt="logo github"></a>
+                        <a title="site demo" target="_blank" href=""><img class="icon-proj" src="assets/icons/globo.svg" alt="logo web"></a>
+                    </div> 
+                </div>           
+            </div>
+            <div class="proj">
+                <div class="banner">
+                    <h1 class="title-proj"></h1>
+                    <img class="banner-img" src="" alt="">
+                </div>
+                <div class="info-proj">
+                    <p class="desc-proj"></p>
+                    <div class="projlinks">
+                        <a title="repositório github" target="_blank" href=""><img class="icon-proj" src="assets/icons/github.svg" alt="logo github"></a>
+                        <a title="site demo" target="_blank" href=""><img class="icon-proj" src="assets/icons/globo.svg" alt="logo web"></a>
+                    </div> 
+                </div>           
+            </div>
+        </div>
+    </section>
+
     <script src="assets/scripts/typeEffect.js"></script>
     <script src="assets/scripts/subjects.js"></script>
+    <script src="assets/scripts/projEmpty.js"></script>
 </body>
 </html>
