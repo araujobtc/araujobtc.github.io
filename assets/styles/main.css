@@ -1,8 +1,6 @@
 :root{
     --greenish-gray: #37423b; 
     --light-blue: #d7dfe4;
-    --light-pink: #e4989b;
-    --soft-g-gray: #14241691;
     --blue: #314852;
 }
 
@@ -45,4 +43,20 @@ header{
     border-radius: 10px;
     background-color: var(--blue);
     transition: 0.5s ease-in-out;
+}
+
+.word-JS{
+    color: #ffa500;
+}
+
+.word-PY{
+    color: #dbdd6b;
+}
+
+.word-HTML{
+    color: #e34f26;
+}
+
+.word-CSS{
+    color: #7a97f5;
 }
