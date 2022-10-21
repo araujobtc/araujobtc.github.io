@@ -1,12 +1,23 @@
 :root{
-    --greenish-gray: #37423b; 
     --light-blue: #d7dfe4;
     --blue: #314852;
+    --pink: #d87b7e;
+    --soft-pink: #d87b7e60;
+    --light-soft-pink: #b8a6af;
+    --rborder: 10px;
+    --letters1: 26pt;
+    --letters2: 20pt;
+    --letters3: 12pt;
+    --letters4: 12pt;
+    --letters5: 10pt;
+    --letters6: 8pt;
 }
 
 *{
     margin: 0;
     padding: 0;
+    border: 0;
+    box-sizing: border-box;
     font-family: 'Consolas', sans-serif;
 }
 
@@ -25,6 +36,7 @@ header{
     top: 0;
     background-color: #00000075;
     backdrop-filter: blur(20px);
+    z-index: 1;
 }
 
 #logo{
@@ -35,22 +47,41 @@ header{
     color: var(--light-blue);
     text-decoration: none;
     padding: 12px;
-    margin-right: 15px;
+    margin-right: 10px;
     font-weight: 200;
+    font-size: var(--letters3);
 }
 
 .section-link:hover{
     border-radius: 10px;
     background-color: var(--blue);
-    transition: 0.5s ease-in-out;
+    transition: 0.3s ease-in-out;
 }
+
+/* footer*/
+
+footer{
+    width: 100%;
+    margin-top: 50px;
+    display: inline-flex;
+    justify-content: center;
+    padding: 15px;
+    background: #080808;
+}
+
+#foot-infos p{
+    color: var(--pink);
+    font-size: var(--letters4);
+}
+
+/* ------------------------ */
 
 .word-JS{
     color: #ffa500;
 }
 
 .word-PY{
-    color: #dbdd6b;
+    color: #664bff;
 }
 
 .word-HTML{

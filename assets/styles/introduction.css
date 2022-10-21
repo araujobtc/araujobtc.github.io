@@ -1,42 +1,36 @@
-:root{
-    --pink: #d87b7e;
-    --soft-pink: #d87b7e60;
-    --light-blue: #d7dfe4;
-}
-
-/* introduction */
-
 #introduction{
     display: flex;
-    justify-content: space-evenly;
     align-items: center;
-    padding: 25px;
-    height: 84vh;
+    justify-content: center;
+    height: 92vh;
+    width: 100%;
+}
+
+#intro{
+    width: 85%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
 }
 
 #infos{
-    width: 40%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-weight: 500;
-    color: var(--pink);
+    width: 100%;
 }
 
 #infos span{
     text-align: left;
-    align-self: flex-start;
     color: var(--light-blue);
-    font-size: 24pt;
-    letter-spacing: 1px;
+    font-size: var(--letters2);
+    letter-spacing: 2px;
 }
 
 #my-name{
-    font-size: 32pt;
-    margin: 15px;
+    color: var(--pink);
+    font-size: var(--letters1);
+    font-weight: 500;
     letter-spacing: 3px;
-    align-self: flex-start;
+    margin: 15px;
 }
 
 #my-name::after{
@@ -57,8 +51,6 @@
 
 #social-links{
     width: 100%;
-    display: flex;
-    justify-content: left;
     margin-top: 40px;
 }
 
@@ -76,6 +68,6 @@
 }
 
 #figure{
-    width: 500px;
-    height: 500px;
+    width: 100%;
+    height: auto;
 }

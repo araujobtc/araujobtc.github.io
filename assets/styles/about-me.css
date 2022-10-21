@@ -1,14 +1,3 @@
-:root{
-    --pink: #d87b7e;
-    --soft-pink: #d87b7e60;
-    --light-blue: #d7dfe4;
-    --blue: #314852;
-    --light-soft-pink: #beb2b8;
-    --rborder: 10px;
-}
-
-/* about me */
-
 #about-me{
     height: 100vh;
     background-color: var(--blue);
@@ -18,7 +7,7 @@
 }
 
 #container-about{
-    width: 82%;
+    width: 85%;
     height: 60%;
     display: inline-flex;
     justify-content: space-between;
@@ -29,7 +18,6 @@
 }
 
 /* subjects-contents */
-
 #subjects-contents{
     padding: 20px;
     width: 100%;
@@ -38,100 +26,47 @@
 .about{
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .picture{
-    width: 250px;
+    width: 25%;
+    height: auto;
     border-radius: 50%;
 }
 
 .info-about{
-    margin: 25px;
     width: 100%;
+    margin: 15px;
+    padding: 15px;
 }
+
 /* me */
 address{
     font-weight: 600;
+    font-size: var(--letters3);
 }
 
 .info-about p{
-    text-align: justify;
     margin-top: 10px;
+    text-align: justify;
+    font-size: var(--letters3);
 }
+
 /* skins */
 #skins-content .info-about{
     display: grid;
-    grid-template-columns: 3fr 3fr 3fr 3fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
 .skin{
     width: 35px;
     height: 35px;
+    margin: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-self: center;
-    margin: 10px;
-}
-
-/* education */
-
-#education-content, #xp-content{
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
-}
-
-.local{
-    font-size: 13pt;
-    font-weight: 600;
-    width: 95%;
-}
-
-.area-date{
-    font-size: 12pt;
-    font-weight: 500;
-}
-
-#educ, #experience{
-    padding-left: 20px;
-}
-
-#educ ul li, #experience ul li{
-    margin-top: 20px;
-}
-
-.description{
-    margin-top: 10px;
-    text-align: justify;
-    width: 90%;
-}
-
-/* subjects */
-
-#subjects{
-    height: 100%;
-}
-
-.subj{
-    width: 150px;
-    height: calc(100%/4);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.subj:nth-child(1){
-    border-top-right-radius: var(--rborder);
-}
-
-.subj:nth-last-child(1){
-    border-bottom-right-radius: var(--rborder);
-}
-
-.subj:hover{
-    background-color: var(--soft-pink);
 }
 
 .subj img{
@@ -139,6 +74,54 @@ address{
     margin: 5px;
 }
 
-.subj span{
-    text-align: center;
+/* education and experience*/
+#education-content, #xp-content{
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+#education-content h1, #xp-content h1{
+    font-size: var(--letters2);
+}
+
+.local{
+    font-size: var(--letters3);
+    font-weight: 600;
+    width: 95%;
+}
+
+.area-date{
+    font-size: var(--letters4);
+    font-weight: 500;
+}
+
+#educ, #experience{
+    margin: 25px;
+}
+
+.description{
+    margin-top: 10px;
+    text-align: justify;
+    font-size: var(--letters5);
+}
+
+/* subjects */
+#subjects{
+    height: 100%;
+}
+
+.subj{
+    width: 130px;
+    height: calc(100%/4);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: var(--rborder);
+    font-size: var(--letters3);
+}
+
+.subj:hover{
+    background-color: var(--soft-pink);
 }
