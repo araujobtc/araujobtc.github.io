@@ -1,0 +1,188 @@
+:root{
+    --rletters1: 4.5vw;
+    --rletters2: 3.5vw;
+    --rletters3: 2vw;
+    --rletters4: 1.9vw;
+    --rletters5: 1.8vw;
+    --rletters6: 9px;
+}
+
+@media screen and (max-width: 900px){
+    .word-JS, .word-PY, .word-HTML, .word-CSS{
+        font-size: var(--rletters3);
+    }
+    
+    /* intro */    
+    #introduction{
+        height: auto;
+        min-height: 100vh;
+    }
+    #intro{
+        padding: 10px;
+        width: 100%;
+    }
+    #infos{
+        width: 100%;
+        position: absolute;
+        background-color: #141414f1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+    }
+    #infos span{
+        font-size: var(--rletters2);
+    }
+    #my-name{
+        font-size: var(--rletters1);
+    }
+    #infos{
+        height: 100%;
+        padding: 20px;
+    }
+    #figure{
+        width: 55%;
+    }
+
+    /* about */
+    #about-me{
+        height: auto;
+        min-height: 100vh;
+        padding: 40px;
+    }
+    #container-about{
+        flex-direction: column;
+        height: auto;
+        width: 90%;
+    }
+    .about{
+        flex-direction: column;
+        align-items: center;
+    }
+    .info-about{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #education-content, #xp-content{
+        font-size: var(--rletters2);
+        padding-right: 5px;
+        padding-left: 12px;
+    }
+    .picture{
+        width: 25%;
+    }
+    .local, .info-about p, address{
+        font-size: var(--rletters3);
+    }
+    .area-date{
+        font-size: var(--rletters4);
+    }
+    .description{
+        font-size: var(--rletters5);
+    }
+    #subjects{
+        height: 70px;
+        width: 100%;
+        display: inline-flex;
+    }
+    .subj{
+        width: 100%;
+        height: 100%;
+        font-size: var(--rletters3);
+    }
+    .subj img{
+        width: 20px;
+    }
+    
+    /* projects */
+    #container-proj{
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 30px;
+    }    
+    #projects{
+        height: auto;
+        min-height: 100vh;
+        font-size:  var(--rletters2);
+    }
+    .title-proj{
+        width: 198px;
+        height: 198px;
+        font-size:  var(--rletters5);
+    }
+    .desc-proj, .desc-proj strong{
+        font-size:  var(--rletters6);
+    }
+    .proj, .banner, .info-proj{
+        width: 200px;
+    }
+    .icon-proj{
+        width: 20px;
+        padding: 2px;
+    }
+    .icon-proj:hover{
+        width: 20px;
+    }
+}
+
+@media screen and (max-width: 500px){
+    /* header */
+    #logo{
+        margin-left: 10px;
+    }
+    .section-link{
+        font-size: 2.5vw;
+        margin-right: 5px;
+    }
+
+    /* intro */
+    #infos span{
+        font-size: 14px;
+    }
+    #my-name{
+        font-size: 20px;
+    } 
+    #figure{
+        width: 75%;
+    }
+
+    /* about */
+    #container-about{
+        min-height: 500px;
+    }
+    .picture{
+        width: 35%;
+    }
+    #education-content h1, #xp-content h1{
+        font-size: 14px;
+    }
+    .local, .info-about p, .info-about span, address, .subj{
+        font-size: 11px;
+    }
+    .area-date{
+        font-size: 10px;
+    }
+    .description{
+        font-size: var(--rletters6);
+    }
+    #subjects{
+        height: 50px;
+    }
+    .subj img{
+        width: 15px;
+    }
+    
+    /* projects */
+    #container-proj{
+        grid-template-columns: 1fr;
+    }    
+    #projects h1{
+        font-size:  var(--rletters1);
+    }
+    .title-proj{
+        font-size:  12px;
+    }
+    .desc-proj, .desc-proj strong{
+        font-size:  var(--rletters6);
+    }
+}
