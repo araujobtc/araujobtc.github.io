@@ -7,7 +7,7 @@
 }
 
 #intro{
-    width: 85%;
+    width: 90%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -68,6 +68,6 @@
 }
 
 #figure{
-    width: 100%;
+    width: 50%;
     height: auto;
 }

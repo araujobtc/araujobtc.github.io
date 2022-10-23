@@ -5,12 +5,12 @@
     --soft-pink: #d87b7e60;
     --light-soft-pink: #b8a6af;
     --rborder: 10px;
-    --letters1: 26pt;
-    --letters2: 20pt;
-    --letters3: 12pt;
-    --letters4: 12pt;
-    --letters5: 10pt;
-    --letters6: 8pt;
+    --letters1: 3vw;
+    --letters2: 2vw;
+    --letters3: 14px;
+    --letters4: 13px;
+    --letters5: 11px;
+    --letters6: 10px;
 }
 
 *{
@@ -90,4 +90,5 @@ footer{
 
 .word-CSS{
     color: #7a97f5;
+    font-size: var(--letters4);
 }

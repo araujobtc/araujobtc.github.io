@@ -74,6 +74,10 @@ address{
     margin: 5px;
 }
 
+.skin span{
+    font-size: var(--letters4);
+}
+
 /* education and experience*/
 #education-content, #xp-content{
     flex-direction: column;
