@@ -7,7 +7,7 @@
 }
 
 #container-about{
-    width: 85%;
+    width: 80%;
     height: 60%;
     display: inline-flex;
     justify-content: space-between;
@@ -101,6 +101,10 @@ address{
 }
 
 #educ, #experience{
+    margin: 25px;
+}
+
+#educ li, #experience li{
     margin: 25px;
 }
 

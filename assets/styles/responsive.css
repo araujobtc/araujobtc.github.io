@@ -1,10 +1,10 @@
 :root{
     --rletters1: 4.5vw;
     --rletters2: 3.5vw;
-    --rletters3: 2vw;
-    --rletters4: 1.9vw;
-    --rletters5: 1.8vw;
-    --rletters6: 9px;
+    --rletters3: 13px;
+    --rletters4: 12px;
+    --rletters5: 11px;
+    --rletters6: 10px;
 }
 
 @media screen and (max-width: 900px){
@@ -23,7 +23,7 @@
     #infos{
         width: 100%;
         position: absolute;
-        background-color: #141414c9;
+        background-color: #141414d9;
         display: flex;
         flex-direction: column;
         justify-content: center;
