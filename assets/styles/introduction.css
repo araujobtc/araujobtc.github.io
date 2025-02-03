@@ -16,11 +16,12 @@
 
 #infos{
     width: 100%;
+    padding-left: 25px;
 }
 
 #infos span{
     text-align: left;
-    color: var(--light-blue);
+    color: var(--blue);
     font-size: var(--letters2);
     letter-spacing: 2px;
 }
@@ -68,6 +69,7 @@
 }
 
 #figure{
+    max-width: 500px;
     width: 50%;
     height: auto;
 }
